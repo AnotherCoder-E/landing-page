@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    background-color: lightgray;
     width: 100vw;
     height: 100vh;
 
@@ -18,6 +19,9 @@ body {
     text-align: center;
 }
 
+header, footer {
+    background-color: lightgreen;
+}
 
 header {
     display: flex;
@@ -27,7 +31,7 @@ header {
     flex: 2 1 auto;
     padding: 20px;
 
-    background-color: lightslategrey;
+    background-color: saddlebrown;
 }
 
 button {
@@ -35,34 +39,23 @@ button {
     font-size: 20px;
     padding: 10px;
     width: 200px;
-}
-
-.learn-btn {
     margin-top: 20px;
 }
 
 main {
-    background-image: linear-gradient(180deg, lightslategrey, black );
+    background-color: lightseagreen;
+    height: 600px;
 
     flex: 4 1 auto;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
 }
-
-/* find out why <main> doesn't work */
 
 footer {
     flex: 1 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-
-    background-color: black;
 }
 
 .nav-bar {
@@ -73,7 +66,8 @@ footer {
     flex-direction: row;
     padding: 10px;
 
-    background-color: lightslategrey;
+    background-color: saddlebrown;
+
 }
 
 .nav-links {
@@ -91,7 +85,6 @@ footer {
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 .logo {
@@ -129,29 +122,22 @@ a {
     border-radius: 5px;
 }
 
-.school {
-    color: silver;
-    font-size: 20px;
-}
-
 .schools {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     flex: 4 1 auto;
-    gap: 20px;
-    /* flex-wrap: wrap; */
-    /* flex-wrap doesn't work  */
 
-    max-width: 1600px;
-    padding: 20px;
-    /* background-color: rgba(100, 0, 0, 0.5); */
+    /* height: 100%; */
+    background-color: rgba(100, 0, 0, 0.5);
 }
+
+/* add flex-wrap to .schools and set their alignment */
 
 .medallion {
 
-    /* background-color: brown; */
+    background-color: brown;
     width: 200px;
     height: 200px;
     object-fit: contain;
@@ -159,7 +145,6 @@ a {
 
 .page-title {
     font-size: 48px;
-    color: black;
 }
 
 .wolf {
@@ -171,7 +156,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* background-color: lightpink; */
+    background-color: lightpink;
 }
 
 .cat {
@@ -192,16 +177,4 @@ a {
 .bear {
     order: 5;
     align-self: flex-start;
-}
-
-.citation {
-    color: silver;
-    background-color: rgb(48,48,48);
-    padding: 20px;
-    border: 2px solid silver;
-    border-radius: 5px;
-}
-
-.citation span {
-    font-size: 22px;
 }
